@@ -1,0 +1,15 @@
+.image-k img{
+    width: 550;
+    height: 400px;
+    background: url(oak.jpg); 
+    background-size: cover;
+    position: center; 
+    display:block;
+	margin:auto;
+  }
+
+  body{
+    background-color: blanchedalmond;
+    font-family: fantasy;
+    color: crimson;
+  }
