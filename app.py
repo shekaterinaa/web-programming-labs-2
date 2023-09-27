@@ -8,7 +8,7 @@ def start():
 
 @app.route("/menu")
 def menu():
-    return """
+    return '''
 <!doctype html>
 <html>
     <head>
@@ -24,12 +24,13 @@ def menu():
         </footer>
     </body>
 </html>
-"""
+'''
 
 @app.route("/lab1")
 def lab1():
-    return """
+    return '''
 <!doctype html>
+<link rel ="stylesheet href="''' + url_for('static',filename='lab1.css') + '''">
 <html>
     <head>
         <title> Шкуропатова Екатерина Александровна, лабораторная 1</title>
@@ -136,6 +137,7 @@ def python():
     </body>
 </html>
 '''
+
 @app.route('/lab1/shpitz')
 def shpitz():
     return '''
@@ -164,13 +166,5 @@ def shpitz():
         </footer>
     </body>
 </html>
-'''
 
-@app.route("/lab2/example")
-def example():
-    name = 'Шкуропатова Екатерина Александровна'
-    number_lab = '2'
-    group = 'ФБИ-13'
-    number_course = '3'
-    return render_template('example.html', name=name, number_lab=number_lab, 
-    group=group, number_course=number_course)
+'''
