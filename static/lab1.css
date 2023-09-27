@@ -1,15 +1,30 @@
 .image-k img{
-    width: 550;
-    height: 400px;
-    background: url(oak.jpg); 
-    background-size: cover;
-    position: center; 
-    display:block;
-	margin:auto;
-  }
+  width: 550;
+  height: 400px;
+  background: url(oak.jpg); 
+  background-size: cover;
+  position: center; 
+  display:block;
+  margin:auto;
+}
 
-  body{
-    background-color: blanchedalmond;
-    font-family: fantasy;
-    color: crimson;
-  }
+body{
+  background-color: blanchedalmond;
+  font-family: fantasy;
+  color: crimson;
+}
+h1{
+  font-size: 50pt;
+  font-family: 'Courier New', Courier, monospace;
+  margin: 20px;
+}
+
+img {
+  width: 80%;
+  margin: 20px;
+}
+
+div, li {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: large;
+}
