@@ -89,7 +89,7 @@ def student():
             НГТУ, ФБ, Лабораторная работа 1
         </header>
         <h1>Шкуропатова Екатерина Александровна</h1>
-        <img src="''' +  url_for('static', filenamelogo_ngtu.png='') + '''">
+        <img src="''' +  url_for('static', filename='logo_ngtu.png') + '''">
         <footer>
             &copy; Шкуропатова Екатерина, ФБИ-13, 3 курс, 2023
         </footer>
