@@ -1,0 +1,30 @@
+
+body {
+    margin-left: 20px;
+    margin-right: 20px;
+ 
+}
+main {
+    padding: 10px;
+}
+ 
+header {
+    background-color: khaki;
+    color: goldenrod; 
+    padding: 5px;
+    font-size: 16pt;
+ 
+}
+ 
+footer {
+    background-color: khaki;
+    color: goldenrod; 
+    padding: 5px;
+    font-size: 11pt;
+    font-style: italic;
+    text-align: right;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    position: fixed;
+}
