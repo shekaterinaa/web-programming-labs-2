@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if name %}
+                {{name}}.
+            {% else %}
+                Анонимус.
+            {% endif %}
+            Лабораторная работа {{number_lab}}</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='main.css')}}">
+</head>
+<body>
+    <header>
+        WEB-программирование, часть 2. {% if number_lab %}Лабораторная работа {{number_lab}}{% endif %}
+    </header>
+
+    <main>
+        <h1 style="text-align: center;"> Разновидности цветов </h1>
+        <div style="font-size: 30px; text-align: left;">АЛЛИУМ</div>
+        <img src = "/static/f1.png" style="width: 400px; ">
+        <div style="position: absolute; left: 450px; top: 200px; width: 500px;">
+        </div>Аллиум, или декоративный лук – это общее название отдельного рода растений,
+         множество разновидностей которого используется в основном в декоративных целях.</div>
+
+        <div style="font-size: 30px; text-align: left;">АЛОЭ ТРАСКИ</div>
+        <img src = "/static/f2.png" style="width: 400px; ">
+        <div style="position: absolute; left: 450px; top: 550px; width: 500px;">
+            Алоэ траски – это разновидность алоэ родом из Южной Африки, отличающаяся особой неразветвленной формой.
+             Цветки этого растения имеют оранжевый и желтый оттенки и собраны в компактные кисти цилиндрической формы.
+        </div>
+       
+        <div style="font-size: 30px; text-align: left;">АЛЬСТРОМЕРИЯ</div>
+        <img src = "/static/f3.png" style="width: 400px; ">
+        <div style="position: absolute; left: 450px; top: 900px; width: 500px;">Альстромерия, она же перуанская лилия или лилия инков — это чарующий
+         цветок родом из Южной Америки, который коренные обитатели континента считали даром Солнечного божества и потому наделяли его магическими свойствами. 
+        </div>
+
+        <div style="font-size: 30px; text-align: left;">АМАРИЛЛИС</div>
+        <img src = "/static/f4.png" style="width: 400px; ">
+        <div style="position: absolute; left: 450px; top: 1250px; width: 500px;">Амариллис, или гиппеаструм – это похожий на лилию
+         луковичный цветок родом из Южной Африки. Практически все виды гиппеаструма,
+         произрастающие на собственной родине, при всей своей красоте и оригинальности характеризуются полным отсутствием запаха.
+        </div>
+
+        <div style="font-size: 30px; text-align: left;">АНЕМОН</div>
+        <img src = "/static/f5.png" style="width: 400px; ">
+        <div style="position: absolute; left: 450px; top: 1550px; width: 500px;">Анемон, называемый также ветреницей – это красивый
+         нежный цветок семейства лютиковых с хрупкими лепестками и непередаваемым ароматом.
+         Изысканный и элегантный, он более всего напоминает крупный бархатистый цветок мака.
+        </div>
+    </main>
+
+    <footer>
+        &copy;
+        {% if name %}
+            {{name}},
+        {% else %}
+            Анонимус,
+        {% endif %}
+
+        {% if group %}
+            {{group}},
+        {% else %}
+            нет группы,
+        {% endif %}
+
+        {% if number_course %}
+            {{number_course}}
+        {% else %}
+            0
+        {% endif %} курс,
+        2023
+    </footer>
+   
+</body>
+</html>
