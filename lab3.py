@@ -40,3 +40,33 @@ def pay():
        price += 10
 
     return render_template('pay.html', price = price)  
+
+    @lab3.route("/lab3/sps")
+    def sps():
+        return render_template('sps.html')
+
+
+    @lab3.route('/lab3/ticket')
+def ticket():
+   errors = {}
+   user = request.args.get('user')
+   type = request.args.get('type')
+   shelf = request.args.get('shelf')
+   age = request.args.get('age')
+   Destination = request.args.get('Destination')
+   bag = request.args.get('bag')
+   date = request.args.get('date')
+   Departure_point = request.args.get('Departure_point')
+   return render_template('ticket.html', user=user, type=type, shelf=shelf, age=age, Departure_point=Departure_point, Destination=Destination, date=date, bag=bag)
+
+@lab3.route('/lab3/pay_ticket')
+def pay_ticket():
+   user = request.args.get('user')
+   shelf = request.args.get('shelf')
+   age = request.args.get('age')
+   Destination = request.args.get('Destination')
+   bag = request.args.get('bag')
+   date = request.args.get('date')
+   Departure_point = request.args.get('Departure_point')
+   type = request.args.get('type')
+   return render_template('pay_ticket.html', user=user, type=type, shelf=shelf, age=age, Departure_point=Departure_point, Destination=Destination, date=date, bag=bag)

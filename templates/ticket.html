@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+
+{% block lab %}Лабораторная работа 3{% endblock %}
+
+{% block main %}
+   
+  
+    <h1>Железнодорожный билет</h1>
+  
+    <form action="/lab3/pay_tic">
+        <div>
+            <div style="display: inline-block;">
+                <label>ФИО:</label>
+                <div><input type="text" placeholder="ФИО" name="user"  value="{{ user or ''}}" required></div>
+            </div>
+
+            <div style="display: inline-block;">
+                <label>Тип билета:</label>
+                <div>
+                    <select name = "type">
+                        <option value="kids" {{ type == 'kids' and 'selected' }} >Детский</option>
+                        <option value="adult" {{ type == 'adult' and 'selected' }}>Взрослый</option>
+                    </select>
+                </div>
+            </div>
+
+            <div style="display: inline-block;">            
+                <label>Полка:</label>
+                <div>
+                    <select name = "shelf">
+                        <option value="upper" {{ type == 'Верхняя' and 'selected' }} >Верхняя</option>
+                        <option value="lower" {{ type == 'Нижняя' and 'selected' }}>Нижняя</option>
+                        <option value="upper side" {{ type == 'Верхняя боковая' and 'selected' }} >Верхняя боковая</option>
+                        <option value="lower side" {{ type == 'Нижняя боковая' and 'selected' }}>Нижняя боковая</option>
+                    </select>
+                </div>
+            </div>
+           
+            <div style="display: inline-block;">
+                <label>Ваш возраст:</label>
+                <div>
+                    <input type="number" min = 18 max = 120 placeholder="Возраст" name = "age" value="{{ age or '' }}" required>
+                </div>
+            </div>
+        </div>
+       
+        <div>
+            <div style="display: inline-block;">
+                <label>Наличие багажа:</label>
+                <div>
+                    <select name = "bag">
+                        <option value="Да" {{ type == 'yes' and 'selected' }} >Да</option>
+                        <option value="Нет" {{ type == 'no' and 'selected' }}>Нет</option>
+                    </select>
+                </div>
+            </div>
+
+            <div style="display: inline-block;">
+                <label>Пункт выезда:</label>
+                <div>
+                    <input type="text"  placeholder="Пункт выезда" name = "Departure_point" value="{{ Departure_point or '' }}" required>
+                </div>
+            </div>
+
+            <div style="display: inline-block;">
+                <label>Пункт назначения:</label>
+                <div>
+                    <input type="text"  placeholder="Пункт назначения" name = "Destination" value="{{ Destination or '' }}" required>
+                </div>
+            </div>
+
+            <div style="display: inline-block;">
+                <label>Дата поездки:</label>
+                <div>
+                    <input type="date"  name = "date" value="{{ date }}" required>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <button type="submit">Отправить</button>
+        </div>
+    </form>
+
+   
+{% endblock %}
