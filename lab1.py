@@ -1,10 +1,12 @@
 from flask import Blueprint, redirect, url_for, render_template
 lab1 = Blueprint('lab1', __name__)
 
+
 @lab1.route("/")
 @lab1.route("/index")
 def start():
     return redirect ("/menu", code=302)
+
 
 @lab1.route("/menu")
 def menu():
@@ -26,8 +28,9 @@ def menu():
 </html>
 '''
 
+
 @lab1.route("/lab1")
-def lab1():
+def lab():
     return '''
 <!doctype html>
 <link rel ="stylesheet href="''' + url_for('static',filename='lab1.css') + '''">
@@ -64,6 +67,8 @@ def lab1():
     </body>
 </html>
 '''
+
+
 @lab1.route('/lab1/oak')
 def oak():
     return '''
@@ -78,6 +83,8 @@ def oak():
    </body>
 <html>
 '''
+
+
 @lab1.route('/lab1/student')
 def student():
     return '''
@@ -96,6 +103,8 @@ def student():
     </body>
 </html>
 '''
+
+
 @lab1.route('/lab1/python')
 def python():
     return '''
@@ -137,6 +146,7 @@ def python():
     </body>
 </html>
 '''
+
 
 @lab1.route('/lab1/shpitz')
 def shpitz():
