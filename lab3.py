@@ -19,7 +19,7 @@ def forml():
     sex = request.args.get('sex')
     return render_template('form1.html', user=user, age=age, sex=sex, errors=errors)
 
-   @lab3.route("/lab3/order")
+@lab3.route("/lab3/order")
 def order():
     return render_template('order.html')
 
@@ -46,7 +46,7 @@ def pay():
         return render_template('sps.html')
 
 
-    @lab3.route('/lab3/ticket')
+@lab3.route('/lab3/ticket')
 def ticket():
    errors = {}
    user = request.args.get('user')
