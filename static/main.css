@@ -28,3 +28,10 @@ footer {
     left: 0;
     position: fixed;
 }
+
+.menu {
+    margin-bottom: 15px;
+    padding: 7px;
+    text-align: center;
+    background-color: blanchedalmond;
+}
