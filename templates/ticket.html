@@ -1,19 +1,16 @@
 {% extends "base.html" %}
-
 {% block lab %}Лабораторная работа 3{% endblock %}
-
 {% block main %}
+    
    
-  
     <h1>Железнодорожный билет</h1>
-  
-    <form action="/lab3/pay_tic">
+   
+    <form action="/lab3/pay_ticket">
         <div>
             <div style="display: inline-block;">
                 <label>ФИО:</label>
                 <div><input type="text" placeholder="ФИО" name="user"  value="{{ user or ''}}" required></div>
             </div>
-
             <div style="display: inline-block;">
                 <label>Тип билета:</label>
                 <div>
@@ -23,8 +20,7 @@
                     </select>
                 </div>
             </div>
-
-            <div style="display: inline-block;">            
+            <div style="display: inline-block;">             
                 <label>Полка:</label>
                 <div>
                     <select name = "shelf">
@@ -35,15 +31,15 @@
                     </select>
                 </div>
             </div>
-           
+            
             <div style="display: inline-block;">
                 <label>Ваш возраст:</label>
                 <div>
-                    <input type="number" min = 18 max = 120 placeholder="Возраст" name = "age" value="{{ age or '' }}" required>
+                    <input type="number" min = 18 max = 120 name = "age" value="{{ age }}" required>
                 </div>
             </div>
         </div>
-       
+        
         <div>
             <div style="display: inline-block;">
                 <label>Наличие багажа:</label>
@@ -53,22 +49,19 @@
                         <option value="Нет" {{ type == 'no' and 'selected' }}>Нет</option>
                     </select>
                 </div>
-            </div>
-
+            </div> 
             <div style="display: inline-block;">
                 <label>Пункт выезда:</label>
                 <div>
                     <input type="text"  placeholder="Пункт выезда" name = "Departure_point" value="{{ Departure_point or '' }}" required>
                 </div>
             </div>
-
             <div style="display: inline-block;">
                 <label>Пункт назначения:</label>
                 <div>
                     <input type="text"  placeholder="Пункт назначения" name = "Destination" value="{{ Destination or '' }}" required>
                 </div>
             </div>
-
             <div style="display: inline-block;">
                 <label>Дата поездки:</label>
                 <div>
@@ -76,11 +69,9 @@
                 </div>
             </div>
         </div>
-
         <div>
             <button type="submit">Отправить</button>
         </div>
     </form>
-
-   
+    
 {% endblock %}

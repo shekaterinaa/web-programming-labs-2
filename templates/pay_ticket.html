@@ -1,13 +1,13 @@
 {% extends "base.html" %}
-
 {% block lab %}Лабораторная работа 3{% endblock %}
 
 {% block main %}
 
+
     <h1>Ваш билет</h1>
     <div>ФИО:{{ user }}</div>
-    <div>Тип билета: {{ type }}</div>
-    <div>Полка: {{ shelf }}</div>
+    <div>Тип билета: {{ Взрослый if type=='adult' else 'Детский' }}</div>
+    <div>Полка: {{ 'Верхняя'if shelf == 'upper' else 'Нижняя'  'Верхняя боковая' if shelf=='upper side' else 'Нижняя боковая' }}</div>
     <div>Ваш возраст: {{ age }}</div>
     <div>Наличие багажа: {{ bag }}</div>
     <div>Пункт выезда: {{ Departure_point }}</div>
@@ -16,5 +16,4 @@
     <div>
         <a href="/lab3/ticket">К покупкам билета</a>
     </div>
-
 {% endblock %}

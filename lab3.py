@@ -41,9 +41,10 @@ def pay():
 
     return render_template('pay.html', price = price)  
 
-    @lab3.route("/lab3/sps")
-    def sps():
-        return render_template('sps.html')
+@lab3.route("/lab3/sps")
+def sps():
+
+    return render_template('sps.html')
 
 
 @lab3.route('/lab3/ticket')
