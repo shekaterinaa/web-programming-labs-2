@@ -1,12 +1,16 @@
 
 body {
-    margin-left: 20px;
-    margin-right: 20px;
+    background-color: antiquewhite;
  
 }
+
 main {
-    padding: 10px;
-}
+        text-align: left;
+        padding: 5px;
+        font-size: 16pt;
+        font-family:'Courier New', Courier, monospace;
+    }
+
  
 header {
     background-color: khaki;
@@ -34,4 +38,13 @@ footer {
     padding: 7px;
     text-align: center;
     background-color: blanchedalmond;
+}
+
+.errors {
+    text-align: left;
+    color: rgb(203, 24, 0);
+    padding: 5px;
+    font-size: 16pt;
+    font-family:'Courier New', Courier, monospace;
+
 }
