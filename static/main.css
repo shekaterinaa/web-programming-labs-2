@@ -1,9 +1,12 @@
 
-body {
-    background-color: antiquewhite;
- 
+body main {
+    color: #e02e2e;
+    background-color: #e6e0e0;
+    font-size: 28px;
+    height: 100%;
+    position: absolute;
+    width: 100%;
 }
-
 main {
         text-align: left;
         padding: 5px;
