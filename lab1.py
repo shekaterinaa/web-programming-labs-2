@@ -25,6 +25,7 @@ def menu():
         <li><a href="http://127.0.0.1:5000/lab3/" target="_blank">Лабораторная работа 3</a></li>
         <li><a href="http://127.0.0.1:5000/lab4/" target="_blank">Лабораторная работа 4</a></li>
         <li><a href="http://127.0.0.1:5000/lab5/" target="_blank">Лабораторная работа 5</a></li>
+        <li><a href="http://127.0.0.1:5000/lab7/" target="_blank">Лабораторная работа 7</a></li>
         <footer>
             &copy; Шкуропатова Екатерина, ФБИ-13 , 3 курс, 2023
         </footer>
