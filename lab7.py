@@ -16,7 +16,7 @@ def drink():
 def api():
     data = request.json
 
-    if data ['method']=='get-price':
+    if data ['method'] =='get-price':
         return get_price(data['params'])
     
     if data['method']=='pay':
