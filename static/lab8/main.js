@@ -167,7 +167,6 @@ function addCourse() {
     document.getElementById('price').value = '';
     showModal();
 }
-
 // Функция для отправки данных курса на сервер
 function sendCourse() {
     // Получаем значения полей из модального окна
