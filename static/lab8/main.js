@@ -59,3 +59,37 @@ function fillCourseList() {
             }
         });
 }
+
+// Функция для удаления курса
+function deleteCourse(num) {
+    // Запрашиваем подтверждение перед удалением
+    if (!confirm('Вы точно хотите удалить курс?')) {
+        return;
+    }
+
+    // Отправляем запрос на сервер для удаления курса
+    fetch('/lab8/api/courses/' + num, { method: 'DELETE' })
+        .then(function () {
+            // После успешного удаления обновляем список курсов
+            fillCourseList();
+        })
+        .catch(function (error) {
+            // В случае ошибки выводим сообщение в консоль
+            console.error('Ошибка при удалении курса:', error);
+        });
+}
+
+// Функция для отображения модального окна
+function showModal() {
+    document.querySelector('div.modal').style.display = 'block';
+}
+
+// Функция для скрытия модального окна
+function hideModal() {
+    document.querySelector('div.modal').style.display = 'none';
+}
+
+// Функция для закрытия модального окна
+function cancel() {
+    hideModal();
+}
