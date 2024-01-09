@@ -25,6 +25,7 @@ def menu():
         <li><a href="http://127.0.0.1:5000/lab3/" target="_blank">Лабораторная работа 3</a></li>
         <li><a href="http://127.0.0.1:5000/lab4/" target="_blank">Лабораторная работа 4</a></li>
         <li><a href="http://127.0.0.1:5000/lab5/" target="_blank">Лабораторная работа 5</a></li>
+        <li><a href="http://127.0.0.1:5000/lab6/" target="_blank">Лабораторная работа 6</a></li>
         <li><a href="http://127.0.0.1:5000/lab7/" target="_blank">Лабораторная работа 7</a></li>
         <li><a href="http://127.0.0.1:5000/lab8/" target="_blank">Лабораторная работа 8</a></li>
         <li><a href="http://127.0.0.1:5000/lab9/" target="_blank">Лабораторная работа 9</a></li>
