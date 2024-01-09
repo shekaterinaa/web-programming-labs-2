@@ -1,9 +1,7 @@
 # Импорт необходимых модулей и функций из Flask
 from flask import Blueprint, render_template, request, redirect, session, flash, url_for
 # Импорт объекта базы данных из модуля или пакета с именем 'Db'
-from Db import db
-# Импорт моделей 'users' и 'articles' из модуля/пакета 'models' внутри 'Db'
-from Db.models import users, articles
+
 # Импорт функций для хэширования и проверки паролей с использованием Werkzeug
 from werkzeug.security import check_password_hash, generate_password_hash
 # Импорт функций и объектов, связанных с аутентификацией пользователя с использованием Flask-Login
